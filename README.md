@@ -1,6 +1,6 @@
 # Azure-Cognitive-Search-Copy-Index
 
-Sample python code to copy Azure Cognitive Search indexes
+Sample python code to export, import or duplicate Azure Cognitive Search indices
 
 ## How to run it
   python main.py --parameter
@@ -14,3 +14,4 @@ Sample python code to copy Azure Cognitive Search indexes
 | --dst_service_key      			| DESTINATION SERVICE KEY   								 | Leave empty if you want to copy to src_service |
 | --dst_index            			| DESTINATION INDEX 										 | Required                                       |
 | --filter_by            			| String filterable field used to batch read/write operation | REQUIRED                                       |
+| --action           			| Action to perform, either export or import a backup or just duplicate an index into a new one. Enter export, import or duplicate | REQUIRED                                       |
