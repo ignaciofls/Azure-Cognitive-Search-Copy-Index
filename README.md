@@ -20,12 +20,12 @@ Sample python code to export, import or duplicate Azure Cognitive Search indices
 
 To export the aa index into a set of json files to your current folder run this: 
   
-  python main.py --src_service xyz --src_service_key xxx --src_index aa --dst_index bb --filter_by language --action export
+ ``` python main.py --src_service xyz --src_service_key xxx --src_index aa --dst_index bb --filter_by language --action export ```
   
 This command  will browse your current folder for exported json files to import them into a fresh bb index (that will copy index schema from aa index):
   
-  python main.py --src_service xyz --src_service_key xxx --src_index aa --dst_index bb --filter_by language --action import
+```  python main.py --src_service xyz --src_service_key xxx --src_index aa --dst_index bb --filter_by language --action import ```
   
 To duplicate an aa index into a new bb index inheriting its schema and populating it with its content use: 
   
-  python main.py --src_service xyz --src_service_key xxx --src_index aa --dst_index bb --filter_by language --action duplicate
+```  python main.py --src_service xyz --src_service_key xxx --src_index aa --dst_index bb --filter_by language --action duplicate ```
